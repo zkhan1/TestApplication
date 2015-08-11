@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zkhan.majorandroidcomponents"
+    android:versionCode="21" >
+
+    <uses-sdk
+        android:maxSdkVersion="21"
+        android:minSdkVersion="19"
+        android:targetSdkVersion="21" />
+
+    <android:uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <android:uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <android:uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Holo" >
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainScreenActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_main_screen"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <receiver android:name=".broadcast_rxer.MyReceiver" >
+            <intent-filter>
+
+                <!-- custome intent <action android:name="com.example.fzkhancorporation.testapplication"> -->
+                <action android:name="com.zkhan.majorandroidcomponents.broadcast_rxer.A_CUSTOM_INTENT" >
+                </action>
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".content_provider.MyContentProviderActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_my_content_provider"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <provider
+            android:name=".content_provider.MyContentProvider"
+            android:authorities="com.zkhan.majorandroidcomponents.content_provider.MyContentProvider"
+            android:exported="true"
+            android:multiprocess="true" >
+        </provider>
+
+        <activity
+            android:name=".service.MyServiceActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_my_service"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <service
+            android:name=".service.MyService"
+            android:enabled="true" >
+        </service>
+
+        <activity
+            android:name=".multi_threading.MultipleThreadActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_multiple_thread"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".multi_threading.AsyncTaskActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_async_task"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".broadcast_rxer.CustomIntent"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/customIntent"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".database.MyDatabaseActivity"
+            android:label="@string/title_activity_my_database" >
+        </activity>
+        <activity
+            android:name=".content_provider.MyContentProviderCRUD"
+            android:label="@string/title_activity_my_content_provider_crud" >
+        </activity>
+    </application>
+
+</manifest>

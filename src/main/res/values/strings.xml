@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ZK Test Application</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main_screen">ZK MainScreenActivity</string>
+    <string name="launch_website">My GitHub</string>
+    <string name="myContentProvider">Content Provider</string>
+    <string name="service">Service</string>
+    <string name="broadcastrxer">Broadcast Rxer</string>
+    <string name="notifications">Notifications</string>
+    <string name="title_activity_my_content_provider">ZK MyContentProviderActivity</string>
+    <string name="addname">Add Name</string>
+    <string name="title_activity_my_service">ZK MyServiceActivity</string>
+    <string name="example">Simple Service Example</string>
+    <string name="myservice_started">Hi there, your service has started</string>
+    <string name="myservice_stopped">Hi there again, your service has stopped</string>
+    <string name="multithread">Multi-Thread</string>
+    <string name="title_activity_multiple_thread">ZK MultipleThreadActivity</string>
+    <string name="mainthread">Main Thread</string>
+    <string name="myThreadClass">Thread Extension Class</string>
+    <string name="myRunnableClass">Runnable Thread Class</string>
+    <string name="threadExtensionRunning">Child Thread: Thread Extension Running</string>
+    <string name="threadRunnableRunning">Child Thread: Runnable Thread Running</string>
+    <string name="threadMainRunning">Main Thread Running</string>
+    <string name="checkLogCat">Please Check Logcat to see all the threads</string>
+    <string name="title_activity_async_task">ZK AsyncTask</string>
+    <string name="asynctask_btn_title">Sleep for 10 secs</string>
+    <string name="asynctask_btn_title2">Main Thread Response</string>
+    <string name="AsynkTask">AsynkTask</string>
+    <string name="inprogress">To Be Determined</string>
+    <string name="sendMessage">Write a message to broadcast!</string>
+    <string name="myBroadcastIntent">Broadcast an Intent now...</string>
+    <string name="customIntent">ZK Custom Intent</string>
+    <string name="title_activity_my_database">MyDatabaseActivity</string>
+    <string name="myDatabase">My Database</string>
+    <string name="myList">My List View</string>
+    <string name="title_activity_my_content_provider_crud">MyContentProviderCRUD</string>
+    <string name="query">Retrieve</string>
+    <string name="delete">Delete</string>
+
+</resources>

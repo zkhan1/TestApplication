@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/btnProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="@string/asynctask_btn_title"
+        android:onClick="onButtonDownloadWebPage"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/button14"
+        android:layout_alignStart="@+id/button14" />
+
+    <Button
+        android:id="@+id/button14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="@string/asynctask_btn_title2"
+        android:onClick="onButtonMainThreadResponse"
+        android:layout_marginTop="33dp"
+        android:layout_below="@+id/btnProgressBar"
+        android:layout_centerHorizontal="true"
+        />
+
+
+
+</RelativeLayout>
